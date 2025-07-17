@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/layout/Header';
-import Footer from './components/layout/Footer'; // <-- 1. Import the Footer component
+import Footer from './components/layout/Footer'; // <-- Imported the Footer
 import HomePage from './pages/HomePage';
 import ManualEntryPage from './pages/ManualEntryPage';
 import LoginPage from './pages/LoginPage';
@@ -40,7 +40,8 @@ function App() {
           <Route path="*" element={<div className="p-8 text-center"><h2>404: Page Not Found</h2></div>} />
         </Routes>
       </main>
-      {/* 2. Place the Footer component here, after the main content */}
+      
+      {/* This comment is a trivial change for your Git commit */}
       <Footer /> 
     </div>
   );
